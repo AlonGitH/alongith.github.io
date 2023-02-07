@@ -1,0 +1,158 @@
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', Sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    max-width: 1440px;
+    margin: auto;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    width: 600px;
+    height: 450px;
+}
+
+.desktopImage {
+    width: 300px;
+    float: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.mobileImage {
+    display: none;
+}
+
+.bodyContent {
+    background-color: white;
+    width: 240px;
+    height: 430px;;
+    display: inline-block;
+    padding: 10px 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    white-space: normal;
+}
+
+.perfume {
+    font-family: 'Montserrat', Sans-serif;
+    font-weight: 700;
+    color:hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    padding-top: 10px;
+    font-size: 11px;
+}
+
+.title {
+    font-family: 'Fraunces', Sans-serif;
+    font-weight: 900;
+    font-size: 31px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+.desc {
+    color:hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px 0px;
+}
+
+.price {
+    display: inline;
+    font-family: 'Fraunces', Sans-serif;
+    font-size: 31px;
+    padding-bottom: 10px;
+    color:  hsl(158, 36%, 37%);;
+}
+
+.prevPrice {
+    text-decoration: line-through;
+    font-size: 13px;
+    display: inline;
+    color:  hsl(158, 36%, 37%);
+    padding-left: 15px;
+}
+
+.b1 {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 16px;
+    border: none;
+    border-radius: 9px;
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 31px;
+    width: 100%;
+}
+
+.b1:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Responsive element adjustment*/
+@media screen and (max-width: 700px){
+
+    main {
+        width: 342px;
+        height: 610px;
+    } 
+
+    .mobileImage {
+        display: block;
+        /* width: 359px; */
+        height: 240px;
+        margin: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .bodyContent {
+        margin: auto;
+        width: 312px;
+        height: 350px;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+        display: table;
+    }
+
+    .title {
+        line-height: 31px;
+    }
+
+    .desc {
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    .b1 {
+        margin: 14px 0px;
+    }
+
+    .desktopImage {
+        display:none;
+    }
+}
