@@ -6,13 +6,9 @@ body {
     background-size: 800px;
     background-color:  hsl(185, 75%, 39%);  /* Dark Cyan */
  
-    margin: 0 auto;
+    margin: 12% auto;
     letter-spacing: 2px;
-    font-family: sans-serif;
-}
-
-.top-box{
-    margin-top: 10%;
+    font-family: 'kumbh sans', sans-serif;
 }
 
 .container {
